@@ -1,9 +1,10 @@
 set -e
 set -o pipefail
 
-export MOZCONFIG=/home/matthew/mozconfigs/opt_browser_nodebug.mozconfig
+#export MOZCONFIG=/home/matthew/mozconfigs/opt_browser_nodebug.mozconfig
+export MOZCONFIG=/Users/mgaudet/mozconfigs/opt_browser.mozconfig
 
-for fxver in 57 67 77 87 97 107;
+for fxver in  67 87 97 107;
 do
     cat <<- EOF > babel.config.json
     {
@@ -43,7 +44,7 @@ EOF
 
     pushd ~/unified/
 
-    time ./mach raptor-test -t matrix-react-bench --browsertime-arg headless=true | tee benchmarkLog.$fxver &&  cp ./testing/mozharness/build/raptor.json  ~/perf/matrix-react-bench/fxversion-exploration/firefox-$fxver.json
+    time ./mach raptor-test -t matrix-react-bench  --binary /Applications/Firefox.app/Contents/MacOS/firefox --is-release-build | tee benchmarkLog.$fxver &&  cp ./testing/mozharness/build/raptor.json  ~/perf/matrix-react-bench/fxversion-exploration/firefox-$fxver.json
 
     popd
 

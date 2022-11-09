@@ -1,0 +1,104 @@
+
+> matrix-shell-bench@1.0.0 build
+> webpack
+
+@babel/preset-env: `DEBUG` option
+
+Using targets:
+{
+  "firefox": "67"
+}
+
+Using modules transform: auto
+
+Using plugins:
+  proposal-class-static-block { firefox < 93 }
+  proposal-private-property-in-object { firefox < 90 }
+  proposal-class-properties { firefox < 90 }
+  proposal-private-methods { firefox < 90 }
+  proposal-numeric-separator { firefox < 70 }
+  proposal-logical-assignment-operators { firefox < 79 }
+  proposal-nullish-coalescing-operator { firefox < 72 }
+  proposal-optional-chaining { firefox < 74 }
+  syntax-json-strings
+  syntax-optional-catch-binding
+  syntax-async-generators
+  syntax-object-rest-spread
+  transform-dotall-regex { firefox < 78 }
+  proposal-unicode-property-regex { firefox < 78 }
+  transform-named-capturing-groups-regex { firefox < 78 }
+  proposal-export-namespace-from { firefox < 80 }
+  syntax-dynamic-import
+  syntax-top-level-await
+
+Using polyfills: No polyfills were added, since the `useBuiltIns` option was not set.
+Hash: b1c01e76ada6487be8ff
+Version: webpack 4.46.0
+Time: 10708ms
+Built at: 2022-11-08 1:59:41 p.m.
+  Asset       Size  Chunks                    Chunk Names
+   0.js   3.65 KiB       0  [emitted]         
+   1.js   3.09 KiB       1  [emitted]         
+  10.js    802 KiB      10  [emitted]  [big]  
+  11.js   6.91 KiB      11  [emitted]         
+  12.js   92.6 KiB      12  [emitted]         
+  13.js    1.1 KiB      13  [emitted]         
+  14.js   3.13 KiB      14  [emitted]         
+  15.js   17.5 KiB      15  [emitted]         
+  16.js   1.81 KiB      16  [emitted]         
+  17.js   1.65 KiB      17  [emitted]         
+   2.js   2.49 KiB       2  [emitted]         
+   3.js   2.63 KiB       3  [emitted]         
+   4.js   2.23 KiB       4  [emitted]         
+   5.js   7.15 KiB       5  [emitted]         
+   6.js   10.4 KiB       6  [emitted]         
+   7.js   89 bytes       7  [emitted]         
+   8.js  110 bytes       8  [emitted]         
+main.js   5.83 MiB       9  [emitted]  [big]  main
+Entrypoint main [big] = main.js
+   [0] ./node_modules/react/index.js 189 bytes {9} [built]
+   [1] ./node_modules/matrix-react-sdk/src/languageHandler.tsx 17.2 KiB {9} [built]
+   [2] ./node_modules/matrix-js-sdk/src/logger.ts 2.92 KiB {9} [built]
+   [3] ./node_modules/matrix-react-sdk/src/MatrixClientPeg.ts + 1 modules 19.5 KiB {9} [built]
+       | ./node_modules/matrix-react-sdk/src/MatrixClientPeg.ts 8.81 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/actions/MatrixActionCreators.ts 10.6 KiB [built]
+   [4] ./node_modules/matrix-react-sdk/src/dispatcher/dispatcher.ts 2.45 KiB {9} [built]
+   [5] ./node_modules/matrix-react-sdk/src/utils/replaceableComponent.ts 1.84 KiB {9} [built]
+   [6] ./node_modules/matrix-react-sdk/src/settings/SettingsStore.ts + 9 modules 61.9 KiB {9} [built]
+       | ./node_modules/matrix-react-sdk/src/settings/SettingsStore.ts 25.8 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/DeviceSettingsHandler.ts 6.59 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/RoomDeviceSettingsHandler.ts 2.78 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/DefaultSettingsHandler.ts 1.66 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/RoomAccountSettingsHandler.ts 4.67 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/AccountSettingsHandler.ts 8.46 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/RoomSettingsHandler.ts 4.63 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/ConfigSettingsHandler.ts 2.18 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/handlers/LocalEchoWrapper.ts 2.25 KiB [built]
+       | ./node_modules/matrix-react-sdk/src/settings/WatchManager.ts 2.81 KiB [built]
+   [7] ./node_modules/matrix-js-sdk/src/@types/event.ts 6.35 KiB {9} [built]
+   [8] ./node_modules/matrix-react-sdk/src/components/views/elements/AccessibleButton.tsx 3.96 KiB {9} [built]
+  [16] ./node_modules/matrix-react-sdk/src/contexts/MatrixClientContext.tsx 1.54 KiB {9} [built]
+  [62] ./node_modules/matrix-react-sdk/src/utils/DMRoomMap.ts 7.55 KiB {9} [built]
+  [81] ./node_modules/react-dom/index.js 1.32 KiB {9} [built]
+ [409] ./node_modules/matrix-react-sdk/src/components/structures/RoomView.tsx 79.8 KiB {9} [built]
+ [749] ./node_modules/matrix-react-sdk/src/utils/ResizeNotifier.ts 2.16 KiB {9} [built]
+[1545] ./src/index.js + 5 modules 19.8 KiB {9} [built]
+       | ./src/index.js 3.91 KiB [built]
+       | ./src/shell-polyfill-hack.js 10 KiB [built]
+       | ./src/load-skin.js 87 bytes [built]
+       | ./src/dump-tree.js 693 bytes [built]
+       | ./src/FakeMatrixClient.js 2.12 KiB [built]
+       | ./src/synthetic-room.js 2.88 KiB [built]
+    + 1547 hidden modules
+
+WARNING in asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  main.js (5.83 MiB)
+  10.js (802 KiB)
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (5.83 MiB)
+      main.js
+
